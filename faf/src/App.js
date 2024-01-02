@@ -6,7 +6,7 @@ function App() {
   const [selectedAnimal, setSelectedAnimal] = useState("");
 
   const token =
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJNZ2JNWU9mS2dmemZyTzZ4STZWdXY4eVVncGV5c2lxcENkd1d3azRNdnZ1b0o1U1hSeiIsImp0aSI6IjY3ZDQyNTBmMmE0OGY1N2YxYmRjNDk0M2IwZTE2MmZjNWQyYzM0OTJjOTcxNjQ0ZTFlZDBlNWM3ZjQ3MWQwZGE4ZmI0MzNiNjFhNWY1YmMxIiwiaWF0IjoxNzAyNzgzOTUzLCJuYmYiOjE3MDI3ODM5NTMsImV4cCI6MTcwMjc4NzU1Mywic3ViIjoiIiwic2NvcGVzIjpbXX0.SRMBNX3FFNUFc4AxgXurCjT5ucZKrkY4G68l04ns7K7T39wEiTuWXfWJOnmMrH3TKQASQgIXOxcmHVeEM9drJsdN3atlsLP0tk6tr85ibaSctnU9fqP2AtGlV3fv86WDOyEt9nsblQp3jLbppc3B-W-0ootJJk8uY5T9Fq_fj1Gakg8udhc515BVB_tmm7p4exf2dCtaFdnHZrnC53G8cofCwb1uYWT4jiOtUFZY2KFTG50lOQp3DVzSDkiNmU74RlMOmusF9H2lzd3AMTUpBcs63KJPmtpX4Gfoz76ZQuFOLpO8C4_q6glqeWFp_KYKQl-mDzfkjAagLJD8UToXPQ";
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJNZ2JNWU9mS2dmemZyTzZ4STZWdXY4eVVncGV5c2lxcENkd1d3azRNdnZ1b0o1U1hSeiIsImp0aSI6IjdmMTRhZDNiMjEwMTNmM2FkYjNhNTg0NmE0YmU3ZjRkZmE1YzExZWFmNzE1NDM3OTIyMDVlODc0MTkyZWYwOGZjYzU4ZmNjMDA2ODBjOTIyIiwiaWF0IjoxNzA0MjI2OTk2LCJuYmYiOjE3MDQyMjY5OTYsImV4cCI6MTcwNDIzMDU5Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.vZNnxQbwsc4qrZ3fTsrA_Qo6jZJoOfH0I90H4f26gYE3ifiRdEq73KdDqwmIberTE4gL33DDS4rG8iTGUscDvLCewQltyRp_l2iq95xkDcjTX8cYhSrsyEkBZ5Vi7HFUgKjgbFxsVMq-k65mXCpB2u6LJ11i0eunuHj26qDuYbpZRGZQwYynVYNvbtnnReIfxkV4SdD9e5YtfHlHgrvUrdYLYdqD81Ajp5l4ERdaaJQIpnhwbyW5PkSa4cEFBKHZ2wGRF2tUZtIgLpzhAOqHGdElVSDTfFVGWUPCtz0DnJPl0wm9lKyIDFBEYztCuW3n5X3_b6WI9tp4a1fw0WQYHA";
 
   const config = {
     headers: {
@@ -56,7 +56,7 @@ function App() {
         <div key={index}>
           <p>Name: {animal.Name}</p>
           <p>Species: {animal.Species}</p>
-          <img>{animal.Picture}</img>
+          <img src={animal.Picture}></img>
         </div>
       ))}
     </div>
