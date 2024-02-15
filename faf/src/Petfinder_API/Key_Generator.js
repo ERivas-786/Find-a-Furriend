@@ -1,7 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 
-let token = ""
+export var token = ""
 
 let data = qs.stringify({
   'grant_type': 'client_credentials',
@@ -32,3 +32,4 @@ async function makeRequest() {
 
 makeRequest();
 
+export default makeRequest;
