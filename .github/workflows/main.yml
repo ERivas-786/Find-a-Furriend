@@ -1,0 +1,15 @@
+name: find-a-furriend
+
+on: [push]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18.14.2"
+      - run: npm i
+      - run: node Key_Generator.js
+      - run: npm start
