@@ -10,5 +10,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "18.14.2"
-      - run: node -v
+      - run: node Key_Generator.js
+      - run: npm start
+
      
