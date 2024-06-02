@@ -12,10 +12,11 @@ jobs:
           node-version: "18.14.2"    
       - run: npm install
         working-directory: ./faf
-      - run: npm test
-        working-directory: ./faf/src
       - run: npm run build
         working-directory: ./faf/src
+      - run: npm test
+        working-directory: ./faf/src
+      
         
         
 
