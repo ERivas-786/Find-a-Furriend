@@ -53,7 +53,7 @@ function App() {
     }
 
     makeRequest();
-  }, [selectedAnimal]);
+  }, [selectedAnimal, config]);
   // Empty dependency array ensures the effect runs only once after the initial render
 
   return (
