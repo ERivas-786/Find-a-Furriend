@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
+import axios from "axios";
 import { token } from "./Petfinder_API/Key_Generator";
 import makeRequest from "./Petfinder_API/Key_Generator";
 
