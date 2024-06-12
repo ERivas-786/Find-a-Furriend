@@ -56,7 +56,7 @@ function App() {
 
     makeRequest();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedAnimal]);
+  }, [selectedAnimal,config]);
  
 
   return (
