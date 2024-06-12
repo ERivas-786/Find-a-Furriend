@@ -18,8 +18,9 @@ function App() {
         Authorization: `Bearer ${token}`,
       },
     }),
-    []
+    [token]
   );
+
 
   function catButton() {
     setSelectedAnimal((selectedAnimal) => "cat");
