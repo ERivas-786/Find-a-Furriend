@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { token } from "./Petfinder_API/Key_Generator";
 import makeRequest from "./Petfinder_API/Key_Generator";
 
 makeRequest();
 
 function App() {
+  const navigate = useNavigate();
   const [animalList, setAnimalList] = useState([]);
   const [selectedAnimal, setSelectedAnimal] = useState("");
 
@@ -57,6 +59,10 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedAnimal, config]);
 
+  const gotToNewPage = () => {
+    navigate("/petinfo");
+  };
+
   return (
     <div>
       <button onClick={dogButton}>DOGS</button>
@@ -67,7 +73,7 @@ function App() {
           <p>Species: {pet.Species}</p>
           <p>Gender: {pet.Gender}</p>
           <img src={pet.Picture} alt="not found!"></img>
-          <button>Learn More About me!</button>
+          <button onClick={() => gotToNewPage()}>Learn More About me!</button>
         </div>
       ))}
     </div>

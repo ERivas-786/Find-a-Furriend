@@ -1,7 +1,7 @@
 import React from "react";
 
 const PetPage = () => {
-  return <div></div>;
+  return <div>HELLOOOOO</div>;
 };
 
 export default PetPage;
